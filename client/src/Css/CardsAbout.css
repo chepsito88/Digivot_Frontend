@@ -1,0 +1,100 @@
+
+a{
+   text-decoration: none;
+   color: black; 
+}
+.sec-A{
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.heading{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.heading::after{
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;    
+}
+
+.card-wrapperA{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.cardsA{
+    width: 34rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.cardsA .card-img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);  
+}
+
+.profile-img{
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -10rem;
+    border: 1rem solid #ebeef8;
+    z-index: 998;
+}
+
+.cardsA h1{
+    font-size: rem;
+    color: #333;
+    margin: 1.5rem 0;
+}
+
+.job-title{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.about-text{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+@media screen and (min-width: 960px){
+    .card-wrapperA{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .cardsA{
+        margin: 2rem;
+        transition:opacity .5s;
+    }
+}

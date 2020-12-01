@@ -1,0 +1,128 @@
+
+.sidebar{  
+    display: none;
+    height: 80px;   
+    background:rgb(35,89,255);
+    justify-content: flex-start;
+    align-items: center;    
+    
+}
+
+
+
+.sidebar h1{
+    font-size: 30px;
+    margin: auto;
+    color: #fff;
+}
+
+.side-bars{
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+}
+
+
+
+.side-menu{
+    background: rgb(35,89,255);
+    width:250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 999;
+}
+
+.side-menu.active{
+    left: 0;
+    transition: 350ms;
+}
+
+.side-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;    
+}
+
+.side-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    border-radius: 4px;
+}
+
+.side-text a:hover{
+    background-color: #1a83ff;
+}
+
+.side-menu-items{
+    width: 100%;
+}
+
+.sidebar-toggle{
+background-color:rgb(35,89,255);
+width: 100%;
+height: 80px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+span{
+    margin-left: 16px;
+}
+
+
+.btn-close{    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+    font-size: 18px;     
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-close:hover{
+    background: #fff;
+    color: #242424;
+    transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 64em) {
+    .sidebar {
+        position: sticky;
+      }
+
+      .side-menu{
+        background-color: #425be9;
+        width:150px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: 850ms;
+    }
+    .sidebar h1{
+        font-size: 15px;
+    }
+    
+    }
+    

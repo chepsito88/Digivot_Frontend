@@ -1,0 +1,12 @@
+.Principal{   
+    justify-content: center;
+    font-size: 8rem;
+    text-decoration: underline overline;
+}
+
+@media screen and (max-width: 64em) {
+    .Principal {
+        font-size: 2.5em;
+      }
+    }
+    
